@@ -1,0 +1,159 @@
+body{
+    background-image: url("../../img/cruellaBg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.box {
+    padding: 35px;
+    display: flex;
+	  min-height: 80vh;
+	  flex-direction: column;
+	  justify-content: center;
+  	align-items: center;    
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    background-image: url(../img/cruellaBg.jpeg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    background: linear-gradient( rgba(0,0,0,0.9), rgba(0, 0, 0, 0.9) );
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    top: 500px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.3fr 0.9fr;
+    grid-template-rows: 0.6fr 1.4fr 1fr;
+    gap: 0px 0px;
+    border-radius: 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Title Title Title"
+      "Gif Main1 Main2"
+      "anotherGif Main1 Main2";
+  }
+
+  .grid {
+      border-radius: 8px;
+      margin: 5px;
+      border: 1px solid whitesmoke;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .Title { 
+      grid-area: Title;
+    }
+
+      @font-face {
+        font-family: unRound;
+        src: url(../font/Unround.ttf);
+      }
+      
+      .meny{
+        width: 100%;
+        height: 60px; 
+      }
+
+      ul {
+       display: flex;
+       list-style: none;
+       flex-direction: column;
+       flex-direction: row;
+       justify-content:space-evenly; 
+       margin: 20px;
+       padding: 0;
+       overflow: hidden;
+       font-size: 25px; 
+       font-family: unRound;
+     
+       }
+
+      li {
+        float: left;   
+      }
+      li a {
+        display: block;
+        color: red;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;  
+        border-radius: 25px;
+        
+      }
+      li a:hover {
+        text-shadow: 3px 3px 3px rgb(187, 179, 179);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      }
+     
+  
+  .Gif {
+    background-image: url("../img/fire.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: Gif;
+     }
+  
+  .anotherGif {
+    background-image: url("../img/horace.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: Gif;
+    grid-area: anotherGif;
+     }
+  
+  .Main1 {
+       grid-area: Main1;
+       font-family: sans-serif;
+       font-size: 12px;
+     }
+
+  a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    color: red;
+  }
+ 
+
+  .Main2 {
+    background-image: url("../img/cruellaposter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: Main2; 
+    }
+
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+
+  .dog-rotate {
+    right: 1000px;
+    top: 30px;
+    animation: mymove 10s infinite;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  @keyframes mymove {
+    0% {left: -300px;}
+    50% {left: 500px;}
+    100%{left: -300px;}
+  }
+
+.container .footer {
+    text-align: center;
+}
